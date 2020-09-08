@@ -59,7 +59,8 @@ config :chirp, ChirpWeb.Endpoint,
   url: [host: "${APP_NAME}.gigalixirapp.com", port: 443],
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true,
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: ["//chirp.gigalixirapp.com"]
 
 config :chirp, Chirp.Repo,
   adapter: Ecto.Adapters.Postgres,
