@@ -46,7 +46,7 @@ npm-debug.log
 erl_crash.dump
 *.ez
 *.beam
-/config/*.secret.exs
+# /config/*.secret.exs
 .elixir_ls/
 
 ### Elixir Patch ###
