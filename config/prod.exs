@@ -12,7 +12,7 @@ use Mix.Config
 # config :chirp, ChirpWeb.Endpoint,
 #   url: [host: "example.com", port: 80],
 #   cache_static_manifest: "priv/static/cache_manifest.json"
-config :gigalixir_getting_started, GigalixirGettingStartedWeb.Endpoint,
+config :chirp, ChirpWeb.Endpoint,
   load_from_system_env: true,
   url: [host: "chirp.gigalixirapp.com", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
